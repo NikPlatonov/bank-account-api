@@ -1,0 +1,10 @@
+BEGIN TRANSACTION;
+
+DELETE FROM reserves
+WHERE id != '';
+
+DELETE FROM accounts WHERE id = 1;
+
+INSERT INTO accounts VALUES (1, 1000, true, now(), now()) ON CONFLICT DO NOTHING ;
+
+END TRANSACTION ;

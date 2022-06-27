@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: account-api
+  datasource:
+    url: jdbc:postgresql://postgres:5432/account-api
+    username: aca
+    password: aca
